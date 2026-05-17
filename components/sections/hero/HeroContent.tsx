@@ -14,7 +14,7 @@ export default function HeroContent() {
         className={cn(
           hero.padding,
           hero.contentMaxWidth,
-          "w-full pb-16 sm:pb-24 md:pb-32 lg:pb-40",
+          "w-full pb-20 sm:pb-32 md:pb-40 lg:pb-48",
         )}
       >
         <h1
@@ -24,8 +24,8 @@ export default function HeroContent() {
             "drop-shadow-xl",
           )}
         >
-          <span className="block">SOMEWHERE</span>
-          <span className="block">IN PROGRESS</span>
+          <span className="block">SOMEWHERE IN</span>
+          <span className="block">PROGRESS</span>
         </h1>
 
         <div className={cn(heroTypography.accentGroup)}>

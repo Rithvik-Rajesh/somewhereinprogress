@@ -4,6 +4,7 @@ import { hero } from "@/styles/layout";
 import HeroBackground from "./HeroBackground";
 import HeroContent from "./HeroContent";
 import HeroOverlay from "./HeroOverlay";
+import HeroDetails from "./HeroDetails";
 
 export default function Hero() {
   return (
@@ -17,6 +18,7 @@ export default function Hero() {
     >
       <HeroBackground />
       <HeroOverlay />
+      <HeroDetails />
       <HeroContent />
     </section>
   );

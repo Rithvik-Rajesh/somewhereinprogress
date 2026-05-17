@@ -1,8 +1,8 @@
 export const hero = {
   height: "h-[95vh]",
   minHeight: "min-h-[32rem]",
-  padding: "px-6 sm:px-10 md:px-14 lg:px-20",
-  contentMaxWidth: "max-w-4xl",
+  padding: "px-8 sm:px-12 md:px-20 lg:px-32",
+  contentMaxWidth: "max-w-5xl",
 } as const;
 
 export const heroLayers = {
