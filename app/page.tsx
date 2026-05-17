@@ -1,13 +1,9 @@
-import Hero from "@/components/sections/hero/Hero";
-import Intro from "@/components/sections/Intro";
-import Projects from "@/components/sections/Projects";
+import Hero from "@/components/sections/hero";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#0a0a0a]">
       <Hero />
-      <Intro />
-      <Projects />
     </main>
   );
 }
