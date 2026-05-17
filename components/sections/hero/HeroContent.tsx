@@ -21,11 +21,11 @@ export default function HeroContent() {
           className={cn(
             heroTypography.heading,
             heroTypography.headingSize,
-            "drop-shadow-xl",
+            "drop-shadow-[0_4px_32px_rgba(0,0,0,0.6)] flex flex-col",
           )}
         >
           <span className="block">SOMEWHERE IN</span>
-          <span className="block">PROGRESS</span>
+          <span className="block ml-12 sm:ml-24 md:ml-32 lg:ml-40">PROGRESS</span>
         </h1>
 
         <div className={cn(heroTypography.accentGroup)}>

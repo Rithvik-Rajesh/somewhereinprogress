@@ -13,6 +13,13 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-heading: var(--font-anton), Impact, sans-serif;
+  --animate-subtle-breathe: subtle-breathe 8s ease-in-out infinite alternate;
+  
+  @keyframes subtle-breathe {
+    0% { transform: scale(1); opacity: 0.95; }
+    100% { transform: scale(1.01); opacity: 1; }
+  }
 }
 
 body {
