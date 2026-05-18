@@ -4,12 +4,7 @@ import { heroTypography } from "@/styles/typography";
 
 export default function HeroContent() {
   return (
-    <div
-      className={cn(
-        heroLayers.content,
-        "absolute inset-0 flex items-end",
-      )}
-    >
+    <div className={cn(heroLayers.content, "absolute inset-0 flex items-end")}>
       <div
         className={cn(
           hero.padding,
@@ -20,16 +15,15 @@ export default function HeroContent() {
         <h1
           className={cn(
             heroTypography.heading,
-            heroTypography.headingSize,
-            "drop-shadow-[0_4px_32px_rgba(0,0,0,0.6)] flex flex-col",
+            "flex flex-col relative z-10",
           )}
         >
-          <span className="block">SOMEWHERE IN</span>
-          <span className="block ml-12 sm:ml-24 md:ml-32 lg:ml-40">PROGRESS</span>
+          <span className="block text-[clamp(3.5rem,10vw,9rem)] leading-[0.95]">SOMEWHERE IN</span>
+          <span className="block text-[clamp(4.5rem,13.5vw,12rem)] leading-[0.95]">PROGRESS</span>
         </h1>
 
-        <div className={cn(heroTypography.accentGroup)}>
-          <p className={cn(heroTypography.accent, "drop-shadow-md")}>
+        <div className={cn(heroTypography.accentGroup, "border-l-[1px]")}>
+          <p className={cn(heroTypography.accent, "opacity-75")}>
             dreaming louder every year.
           </p>
         </div>
