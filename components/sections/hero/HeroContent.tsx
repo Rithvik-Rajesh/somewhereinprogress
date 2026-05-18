@@ -12,14 +12,14 @@ export default function HeroContent() {
           "w-full pb-20 sm:pb-32 md:pb-40 lg:pb-48",
         )}
       >
-        <h1
-          className={cn(
-            heroTypography.heading,
-            "flex flex-col relative z-10",
-          )}
-        >
-          <span className="block text-[clamp(3.5rem,10vw,9rem)] leading-[0.95]">SOMEWHERE IN</span>
-          <span className="block text-[clamp(4.5rem,13.5vw,12rem)] leading-[0.95]">PROGRESS</span>
+        <h1 className="relative z-10 flex w-full max-w-none flex-col font-['Bebas Neue'] leading-[0.82] uppercase">
+          <span className="origin-left scale-y-[0.95] text-[clamp(2.5rem,6vw,6rem)] font-normal tracking-[-0.02em] text-white/55">
+            SOMEWHERE IN
+          </span>
+
+          <span className="origin-left scale-x-[1.03] bg-gradient-to-b from-[#dbeafecc] via-[#f8fafccc] to-[#ff9155cc] bg-clip-text text-[clamp(6rem,16vw,15rem)] font-normal tracking-[0.015em] text-transparent drop-shadow-[0_0_25px_rgba(255,180,120,0.08)]">
+            PROGRESS
+          </span>
         </h1>
 
         <div className={cn(heroTypography.accentGroup, "border-l-[1px]")}>

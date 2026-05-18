@@ -39,7 +39,7 @@ export default function HeroDetails() {
           </span>
           <div className="flex flex-col items-center">
             <div className="h-13 w-[1.5px] bg-[#d4bd9e]" />
-            <div className="w-[7px] h-[7px] rounded-full bg-[#fdfbf7] shadow-[0_0_8px_4px_rgba(196,119,67,0.6)]" />
+            <div className="w-[7px] h-[7px] rounded-full bg-[#f7b77e] shadow-[0_0_8px_4px_rgba(196,119,67,0.6)]" />
           </div>        
         </div>
       </div>
