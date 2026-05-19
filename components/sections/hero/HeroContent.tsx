@@ -12,7 +12,7 @@ export default function HeroContent() {
           "w-full pb-20 sm:pb-32 md:pb-40 lg:pb-48",
         )}
       >
-        <h1 className="relative z-10 flex w-full max-w-none flex-col font-['Bebas Neue'] leading-[0.82] uppercase">
+        <h1 className="font-['Bebas Neue'] relative z-10 flex w-full max-w-none flex-col leading-[0.82] uppercase">
           <span className="origin-left scale-y-[0.95] text-[clamp(2.5rem,6vw,6rem)] font-normal tracking-[-0.02em] text-white/55">
             SOMEWHERE IN
           </span>
