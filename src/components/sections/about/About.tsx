@@ -16,7 +16,7 @@ export default function About() {
     <Section
       ref={sectionRef}
       id="about"
-      className="relative flex min-h-[115vh] cursor-none items-center overflow-hidden py-32 text-white md:min-h-[125vh] md:py-48"
+      className="relative flex min-h-[115vh] items-center overflow-hidden py-32 text-white md:min-h-[125vh] md:py-48"
     >
       <AboutBackground />
       <HiddenFragmentsLayer containerRef={sectionRef} />
