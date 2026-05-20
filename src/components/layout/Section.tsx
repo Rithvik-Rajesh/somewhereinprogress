@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { forwardRef } from "react";
 
 type Props = {
-  children: React.ReactNode
-  id?: string
-  className?: string
-}
+  children: React.ReactNode;
+  id?: string;
+  className?: string;
+};
 
-export default function Section({ children, id, className = '' }: Props) {
+const Section = forwardRef<HTMLElement, Props>(function Section(
+  { children, id, className = "" },
+  ref,
+) {
   return (
-    <section id={id} className={`relative w-full ${className}`}>
+    <section ref={ref} id={id} className={`relative w-full ${className}`}>
       {children}
     </section>
-  )
-}
+  );
+});
+
+export default Section;
