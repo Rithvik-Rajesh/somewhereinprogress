@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { MouseEvent } from "react";
 
 const navItems = [
   { label: "about", href: "/#about" },
@@ -9,6 +12,29 @@ const navItems = [
 ];
 
 export default function Header() {
+  const handleSectionNavigation = (
+    event: MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    const hash = href.split("#")[1];
+
+    if (!hash || window.location.pathname !== "/") return;
+
+    const section = document.getElementById(hash);
+
+    if (!section) return;
+
+    event.preventDefault();
+
+    const top = section.getBoundingClientRect().top + window.scrollY - 16;
+
+    window.history.pushState(null, "", `#${hash}`);
+    window.scrollTo({
+      top,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-8 sm:px-12 md:px-16 lg:px-24 bg-gradient-to-b from-black/50 via-black/20 to-transparent">
       <Link 
@@ -26,6 +52,8 @@ export default function Header() {
           <div key={item.label} className="relative flex flex-col items-center">
             <Link
               href={item.href}
+              scroll={false}
+              onClick={(event) => handleSectionNavigation(event, item.href)}
               className="font-sans text-[9px] font-medium tracking-[0.2em] uppercase text-white/80 hover:text-white transition-all duration-500 ease-out"
             >
               {item.label}
