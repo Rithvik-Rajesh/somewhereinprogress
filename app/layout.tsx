@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Instrument_Serif, Anton } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/layout/Header";
+import CinematicScrollRail from "@/src/components/effects/CinematicScrollRail";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({
     >
       <body className="min-h-full">
         <Header />
+        <CinematicScrollRail />
         {children}
       </body>
     </html>
