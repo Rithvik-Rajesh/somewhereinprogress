@@ -19,14 +19,16 @@ export default function AboutBackground() {
         }}
       />
 
-      {!shouldReduceMotion && (
-        <motion.div
-          aria-hidden
-          className="absolute inset-x-[-10%] top-[18%] h-[56vh] bg-[linear-gradient(105deg,transparent_8%,rgba(255,204,151,0.035)_34%,transparent_62%)]"
-          animate={{ opacity: [0.36, 0.62, 0.36], x: ["-1.5%", "1.5%", "-1.5%"] }}
-          transition={{ duration: 18, ease: "easeInOut", repeat: Infinity }}
-        />
-      )}
+      <motion.div
+        aria-hidden
+        className="absolute inset-x-[-10%] top-[18%] h-[56vh] bg-[linear-gradient(105deg,transparent_8%,rgba(255,204,151,0.035)_34%,transparent_62%)]"
+        animate={
+          shouldReduceMotion
+            ? undefined
+            : { opacity: [0.36, 0.62, 0.36], x: ["-1.5%", "1.5%", "-1.5%"] }
+        }
+        transition={{ duration: 18, ease: "easeInOut", repeat: Infinity }}
+      />
 
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_52%,transparent_0%,rgba(0,0,0,0.1)_44%,rgba(0,0,0,0.6)_100%)]" />
     </div>
