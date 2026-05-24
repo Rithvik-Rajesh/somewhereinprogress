@@ -48,7 +48,7 @@ export default function About() {
           </div>
 
           <div className="relative md:col-span-5 lg:col-span-4 lg:col-start-9">
-            <div className="absolute -left-8 top-2 hidden h-[82%] w-px bg-gradient-to-b from-[#f0b27a]/22 via-white/8 to-transparent md:block lg:-left-12" />
+            <div className="absolute -left-8 top-2 hidden h-[82%] w-px bg-linear-to-b from-[#f0b27a]/22 via-white/8 to-transparent md:block lg:-left-12" />
 
             <AboutContent>
               <p>

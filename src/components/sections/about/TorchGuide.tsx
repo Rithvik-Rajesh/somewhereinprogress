@@ -22,7 +22,7 @@ export default function TorchGuide({ isDismissed = false }: TorchGuideProps) {
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.36)_52%,rgba(0,0,0,0.72)_100%)]" />
 
-      <div className="relative flex h-[21rem] w-[min(88vw,34rem)] items-center justify-center">
+      <div className="relative flex h-84 w-[min(88vw,34rem)] items-center justify-center">
         <motion.div
           className="absolute left-1/2 top-1/2"
           initial={{ opacity: 0, scale: 0.88, x: "-50%", y: "-50%" }}
