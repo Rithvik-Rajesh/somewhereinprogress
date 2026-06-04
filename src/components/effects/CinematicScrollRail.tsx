@@ -113,8 +113,8 @@ export default function CinematicScrollRail() {
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
-        <div className="absolute right-3 top-0 h-full w-px bg-gradient-to-b from-transparent via-[#c9a482]/[0.18] to-transparent" />
-        <div className="absolute right-3 top-0 h-full w-px bg-gradient-to-b from-transparent via-white/[0.035] to-transparent blur-[1px]" />
+        <div className="absolute right-3 top-0 h-full w-px bg-linear-to-b from-transparent via-[#c9a482]/[0.18] to-transparent" />
+        <div className="absolute right-3 top-0 h-full w-px bg-linear-to-b from-transparent via-white/[0.035] to-transparent blur-[1px]" />
 
         <motion.div
           className="absolute right-3 h-20 w-px -translate-y-full bg-gradient-to-t from-[#e6a267]/18 via-[#e6a267]/8 to-transparent"
