@@ -106,18 +106,18 @@ export default function CinematicScrollRail() {
   return (
     <div
       aria-hidden
-      className="pointer-events-none fixed inset-y-0 right-2 z-[60] hidden w-16 items-center justify-end md:flex lg:right-5"
+      className="pointer-events-none fixed inset-y-0 right-2 z-60 hidden w-16 items-center justify-end md:flex lg:right-5"
     >
       <div
         className="pointer-events-auto relative h-[70vh] min-h-96 w-14"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
-        <div className="absolute right-3 top-0 h-full w-px bg-linear-to-b from-transparent via-[#c9a482]/[0.18] to-transparent" />
+        <div className="absolute right-3 top-0 h-full w-px bg-linear-to-b from-transparent via-[#c9a482]/18 to-transparent" />
         <div className="absolute right-3 top-0 h-full w-px bg-linear-to-b from-transparent via-white/[0.035] to-transparent blur-[1px]" />
 
         <motion.div
-          className="absolute right-3 h-20 w-px -translate-y-full bg-gradient-to-t from-[#e6a267]/18 via-[#e6a267]/8 to-transparent"
+          className="absolute right-3 h-20 w-px -translate-y-full bg-linear-to-t from-[#e6a267]/18 via-[#e6a267]/8 to-transparent"
           animate={{ top: emberTop, opacity: isScrolling ? 1 : 0.48 }}
           transition={{ duration: 0.28, ease: "easeOut" }}
         />
