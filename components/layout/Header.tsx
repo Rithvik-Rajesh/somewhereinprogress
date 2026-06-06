@@ -36,7 +36,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-8 sm:px-12 md:px-16 lg:px-24 bg-gradient-to-b from-black/50 via-black/20 to-transparent">
+    <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-8 sm:px-12 md:px-16 lg:px-24 bg-linear-to-b from-black/50 via-black/20 to-transparent">
       <Link 
         href="/" 
         className="flex items-center gap-3 font-sans text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] uppercase text-white/90 hover:text-white transition-all duration-500 ease-out"
@@ -59,7 +59,7 @@ export default function Header() {
               {item.label}
             </Link>
             {index === 0 && (
-              <div className="absolute -bottom-4 w-[3px] h-[3px] rounded-full bg-[#fdfbf7] shadow-[0_0_8px_4px_rgba(196,119,67,0.6)]" />
+              <div className="absolute -bottom-4 w-0.75 h-0.75 rounded-full bg-[#fdfbf7] shadow-[0_0_8px_4px_rgba(196,119,67,0.6)]" />
             )}
           </div>
         ))}
